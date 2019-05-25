@@ -1,0 +1,122 @@
+.flex-order-one {
+  order: 1;
+}
+
+.flex-order-two {
+  order: 2;
+
+  @include respond(mobile-l) {
+    order: 1;
+	}
+
+  @include respond(mobile-m) {
+    order: 1;
+	}
+
+  @include respond(mobile-s) {
+    order: 1;
+	}
+}
+
+.margin-right {
+  margin-right: 5rem;
+
+  @include respond(laptop) {
+    margin: 0;
+	}
+
+  @include respond(tablet) {
+    margin: 0;
+	}
+
+  @include respond(mobile-l) {
+    margin: 0;
+	}
+
+  @include respond(mobile-m) {
+    margin: 0;
+	}
+
+  @include respond(mobile-s) {
+    margin: 0;
+	}
+}
+
+.pseudo-content-count {
+  &::before {
+    content: '02' !important;
+  }
+  
+}
+
+
+
+.display-none {
+
+  @include respond(laptop) {
+    display: none !important;
+  }
+
+  @include respond(tablet) {
+    display: none !important;
+  }
+
+  @include respond(mobile-l) {
+    display: none !important;
+  }
+
+  @include respond(mobile-m) {
+    display: none !important;
+  }
+  
+  @include respond(mobile-s) {
+    display: none !important;
+	}
+}
+
+.display-block {
+
+  @include respond(laptop) {
+    display: flex !important;
+  }
+
+  @include respond(tablet) {
+    display: none !important;
+  }
+
+  @include respond(mobile-l) {
+    display: none !important;
+  }
+
+  @include respond(mobile-m) {
+    display: none !important;
+  }
+  
+  @include respond(mobile-s) {
+    display: none !important;
+	}
+}
+
+
+
+.padding-left {
+
+  @include respond(laptop) {
+    padding-left: 3rem !important;
+  }
+
+  @include respond(tablet) {
+    padding-left: 3rem !important;
+  }
+}
+
+.padding-right {
+
+  @include respond(laptop) {
+    padding-right: 3rem !important;
+  }
+
+  @include respond(tablet) {
+    padding-right: 3rem !important;
+  }
+}

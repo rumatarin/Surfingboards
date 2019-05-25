@@ -1,0 +1,70 @@
+.social {
+  display: flex;
+
+  &__wrapper {
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+
+      @include respond(laptop) {
+        margin-right: 6rem;
+      }
+
+      @include respond(tablet) {
+        margin-right: 10rem;
+      }
+
+      @include respond(mobile-l) {
+        margin-right: 10rem;
+      }
+
+      @include respond(mobile-m) {
+        margin-right: 10rem;
+      }
+
+      @include respond(mobile-s) {
+        margin-right: 6rem;
+      }
+    }
+  }
+
+  &__item {
+    text-decoration: none;
+
+    &:hover .social__pic{
+      fill: $sec-col;
+    }
+  }
+
+  &__pic {
+    fill: #ebebeb;
+    width: 2rem;
+    height: 2rem;
+    transition: fill .2s ease;
+
+    @include respond(laptop) {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    @include respond(tablet) {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    @include respond(mobile-l) {
+      width: 9rem;
+      height: 9rem;
+    }
+
+    @include respond(mobile-m) {
+      width: 9rem;
+      height: 9rem;
+    }
+
+    @include respond(mobile-s) {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+}

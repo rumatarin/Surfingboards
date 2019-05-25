@@ -1,0 +1,206 @@
+.stories {
+  padding-top: 6rem;
+  &__content {
+    position: relative;
+    display: flex;
+
+    @include respond(tablet) {
+      flex-direction: column;
+    }
+
+    @include respond(mobile-l) {
+      flex-direction: column;
+    }
+
+    @include respond(mobile-m) {
+      flex-direction: column;
+    }
+
+    @include respond(mobile-s) {
+      flex-direction: column;
+    }
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond(tablet) {
+      flex-direction: row;
+    }
+
+    @include respond(mobile-l) {
+      flex-direction: column;
+    }
+
+    @include respond(mobile-m) {
+      flex-direction: column;
+    }
+
+    @include respond(mobile-s) {
+      flex-direction: column;
+    }
+  }
+
+  &__article-pic {
+
+    @include respond(tablet) {
+      flex-basis: 50%;
+    }
+
+    @include respond(tablet) {
+      flex-basis: unset;
+    }
+
+    @include respond(mobile-l) {
+      flex-basis: unset;
+    }
+
+    @include respond(mobile-m) {
+      flex-basis: unset;
+    }
+
+    @include respond(mobile-s) {
+      flex-basis: unset;
+    }
+  }
+
+  &__img {
+    height: 100%;
+
+    @include respond(laptop) {
+      width: 100%;
+    }
+
+    @include respond(tablet) {
+      width: 100%;
+    }
+
+    @include respond(mobile-l) {
+      width: 100%;
+    }
+
+    @include respond(mobile-m) {
+      width: 100%;
+    }
+
+    @include respond(mobile-s) {
+      width: 100%;
+    }
+  }
+
+  &__article-text {
+    width: 34rem;
+    margin-top: 6rem;
+
+    @include respond(laptop) {
+      width: 40rem;
+      align-self: flex-start;
+      margin-left: 4rem;
+      margin-top: 3rem;
+    }
+
+    @include respond(tablet) {
+      margin: 0;
+      flex-basis: 50%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-left: 0;
+      align-self: center;
+    }
+
+    @include respond(mobile-l) {
+      margin-top: 7rem;
+      width: 50rem;
+      margin-left: 0;
+      align-self: center;
+    }
+
+    @include respond(mobile-m) {
+      margin-top: 7rem;
+      width: 50rem;
+      margin-left: 0;
+      align-self: center;
+    }
+
+    @include respond(mobile-s) {
+      margin-top: 3rem;
+      margin-left: 0;
+      align-self: center;
+    }
+  }
+
+  &__article-link {
+    margin-top: 3rem;
+    width: 11rem;
+
+    @include respond(laptop) {
+      width: 100%;
+      margin-top: 3.5rem;
+    }
+
+    @include respond(tablet) {
+      width: 100%;
+      margin-top: 6rem;
+    }
+
+    @include respond(mobile-l) {
+      width: 100%;
+      margin-top: 6rem;
+    }
+
+    @include respond(mobile-m) {
+      width: 100%;
+      margin-top: 6rem;
+    }
+
+    @include respond(mobile-s) {
+      width: 100%;
+    }
+  }
+
+  &__video {
+    position: absolute;
+    right: 0;
+    top: 4rem;
+    box-shadow: -37px 46px 85px -21px rgba(0,0,0,0.4);
+
+    @include respond(laptop) {
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 1.8rem;
+      box-shadow: none;
+    }
+
+    @include respond(tablet) {
+      width: 70%;
+      position: relative;
+      margin: 0 auto;
+      margin-top: 6rem;
+      box-shadow: none;
+    }
+
+    @include respond(mobile-l) {
+      width: 100%;
+      position: relative;
+      margin-top: 6rem;
+      box-shadow: none;
+    }
+
+    @include respond(mobile-m) {
+      width: 100%;
+      position: relative;
+      margin-top: 6rem;
+      box-shadow: none;
+    }
+
+    @include respond(mobile-s) {
+      width: 100%;
+      position: relative;
+      margin-top: 6rem;
+      box-shadow: none;
+    }
+  }
+
+}

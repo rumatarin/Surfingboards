@@ -1,0 +1,79 @@
+.shop {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20rem;
+
+  @include respond(mobile-l) {
+    padding-top: 30rem;
+    padding-bottom: 20rem;
+  }
+
+  @include respond(mobile-m) {
+    padding-top: 30rem;
+    padding-bottom: 20rem;
+  }
+
+  &__span {
+
+    @include respond(laptop) {
+      margin-bottom: 1rem;
+    }
+
+    @include respond(tablet) {
+      margin-bottom: 2rem;
+    }
+
+    @include respond(mobile-l) {
+      margin-bottom: 4rem;
+    }
+
+    @include respond(mobile-m) {
+      margin-bottom: 4rem;
+    }
+
+    @include respond(mobile-s) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 15rem;
+
+    @include respond(laptop-l) {
+      margin-bottom: 20rem;
+    }
+
+    @include respond(laptop) {
+      margin-bottom: 15rem;
+    }
+
+    @include respond(tablet) {
+      margin-bottom: 25rem;
+    }
+
+    @include respond(mobile-l) {
+      margin-bottom: 50rem;
+    }
+
+    @include respond(mobile-m) {
+      margin-bottom: 50rem;
+    }
+
+    @include respond(mobile-s) {
+      margin-bottom: 32rem;
+    }
+  }
+
+  &__carousel {
+    margin-bottom: 10rem;
+
+    @include respond(tablet) {
+      margin-bottom: 5rem;
+    }
+
+    @include respond(mobile-s) {
+      margin-bottom: 3rem;
+    }
+  }
+}

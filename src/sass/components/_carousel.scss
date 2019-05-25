@@ -1,0 +1,517 @@
+.carousel {
+  position: relative;
+  width: 100%;
+
+  @include respond(tablet) {
+    border-top: 1px solid #f5f5f5;
+	  border-bottom: 1px solid #f5f5f5;
+  }
+
+  @include respond(mobile-l) {
+    border-top: 1px solid #f5f5f5;
+	  border-bottom: 1px solid #f5f5f5;
+  }
+
+  @include respond(mobile-m) {
+    border-top: 1px solid #f5f5f5;
+	  border-bottom: 1px solid #f5f5f5;
+  }
+
+  @include respond(mobile-s) {
+    border-top: 1px solid #f5f5f5;
+	  border-bottom: 1px solid #f5f5f5;
+  }
+
+  &__content {
+    
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @include respond(mobile-l) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include respond(mobile-m) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include respond(mobile-s) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__wrapper {
+    display: none;
+  }
+
+  &__wrapper-active {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    position: relative;
+    width: 40rem;
+    
+
+    @include respond(laptop-l) {
+      border: 1px solid #f5f5f5;
+      background-color: #fff;
+    }
+
+    @include respond(laptop) {
+      border: none;
+      background-color: transparent;
+    }
+
+    @include respond(tablet) {
+      display: flex;
+      flex-direction: column;
+      border: none;
+      background-color: transparent;
+    }
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+
+      @include respond(laptop) {
+        margin: 0;
+      }
+
+      @include respond(tablet) {
+        margin: 0;
+      }
+
+      @include respond(mobile-l) {
+        margin: 0;
+      }
+
+      @include respond(mobile-m) {
+        margin: 0;
+      }
+
+      @include respond(mobile-s) {
+        margin: 0;
+      }
+    }
+
+    @include respond(mobile-l) {
+      display: none;
+    }
+
+    @include respond(mobile-m) {
+      display: none;
+    }
+
+    @include respond(mobile-s) {
+      display: none;
+    }
+  }
+
+  &__item-active {
+
+    @include respond(mobile-l) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    @include respond(mobile-m) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    @include respond(mobile-s) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__surf-content {
+    width: 100%;
+  }
+
+  &__surf-pic {
+    position: relative;
+    width: 25rem;
+    height: 32rem;
+    background-color: #ebebeb;
+
+    @include respond(laptop) {
+      width: 75%;
+      height: 32rem;
+      margin: 0 auto;
+    }
+
+    @include respond(tablet) {
+      width: 75%;
+      height: 22rem;
+      margin: 0 auto;
+    }
+
+    @include respond(mobile-l) {
+      margin: 0 auto;
+      width: 67rem;
+      height: 85rem;
+    }
+
+    @include respond(mobile-m) {
+      margin: 0 auto;
+      width: 67rem;
+      height: 85rem;
+    }
+
+    @include respond(mobile-s) {
+      margin: 0 auto;
+      width: 40rem;
+      height: 50rem;
+    }
+  }
+
+  &__surf-img {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    @include respond(laptop) {      
+      width: 75%;
+      left: 50%;
+      margin-left: -11.85rem;
+    }
+
+    @include respond(tablet) {      
+      width: 75%;
+      left: 50%;
+      margin-left: -9.85rem;
+    }
+
+    @include respond(mobile-l) {
+      left: 8.5rem;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @include respond(mobile-m) {
+      left: 8.5rem;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @include respond(mobile-s) {
+      left: 8.5rem;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  &__text-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 18.5rem;
+    left: 53%;
+    top: 30%;
+
+    @include respond(laptop) {
+      position: relative;
+      width: 75%;
+      left: 0;
+      top: 0;
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+
+    @include respond(tablet) {
+      position: relative;
+      width: 75%;
+      left: 0;
+      top: 0;
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+
+    @include respond(mobile-l) {
+      position: relative;
+      width: 100%;
+      left: 0;
+      top: 0;
+      margin-top: 3rem;
+    }
+
+    @include respond(mobile-m) {
+      position: relative;
+      width: 100%;
+      left: 0;
+      top: 0;
+      margin-top: 3rem;
+    }
+
+    @include respond(mobile-s) {
+      position: relative;
+      width: 100%;
+      left: 0;
+      top: 0;
+      margin-top: 3rem;
+    }
+  }
+
+  &__text-span {
+    font-family: 'Poppins', sans-serif;
+    font-size:1.2rem;
+    font-weight: 300;
+    line-height: 1.2rem;
+    color: $ter-col;
+    text-transform: uppercase;
+    align-self: flex-start;
+
+    @include respond(laptop) {
+      font-size: 2rem;
+      align-self: center;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(tablet) {
+      font-size: 2rem;
+      align-self: center;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(mobile-l) {
+      font-size: 3rem;
+      align-self: center;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(mobile-m) {
+      font-size: 3rem;
+      align-self: center;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(mobile-s) {
+      font-size: 3rem;
+      align-self: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__text-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    color: $prim-col;
+    margin-bottom: 4rem;
+
+    @include respond(laptop) {
+      font-size: 3.3rem;
+      margin-bottom: 3rem;
+    }
+
+    @include respond(tablet) {
+      font-size: 3.3rem;
+      margin-bottom: 3rem;
+    }
+
+    @include respond(mobile-l) {
+      font-size: 8rem;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(mobile-m) {
+      font-size: 8rem;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(mobile-s) {
+      font-size: 8rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    margin-left: 30%;
+
+    @include respond(laptop) {
+      margin: 0;
+      width: 100%; 
+    }
+
+    @include respond(tablet) {
+      margin: 0;
+      width: 100%; 
+    }
+
+    @include respond(mobile-l) {
+      margin: 0;
+      width: 100%; 
+    }
+
+    @include respond(mobile-m) {
+      margin: 0;
+      width: 100%;
+    }
+
+    @include respond(mobile-s) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  &__text-price {
+    font-family: 'Poppins', sans-serif;
+    font-size:2rem;
+    font-weight: 300;
+    line-height: 2rem;
+    color: #ce60a8;
+    text-transform: uppercase;
+
+    @include respond(laptop) {
+      text-align: center;
+      font-size: 3rem;
+      line-height: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(tablet) {
+      text-align: center;
+      font-size: 3rem;
+      line-height: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(mobile-l) {
+      font-size: 5rem;
+      line-height: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(mobile-m) {
+      font-size: 5rem;
+      line-height: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(mobile-s) {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+  }
+
+  &__text-link {
+    font-family:"Poppins", serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: .9rem;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+    color: $prim-col;
+    text-decoration: none;
+    align-self: flex-start;
+    margin-left: .2rem;
+    margin-top: .8rem;
+
+    transition: color .3s ease;
+
+    &:hover {
+      color: $sec-col;
+    }
+
+    @include respond(laptop) {
+      font-size: 2rem;
+      line-height: 2rem;
+      align-self: center;
+    }
+
+    @include respond(tablet) {
+      font-size: 2rem;
+      line-height: 2rem;
+      align-self: center;
+    }
+
+    @include respond(mobile-l) {
+      font-size: 5rem;
+      line-height: 5rem;
+      align-self: center;
+    }
+
+    @include respond(mobile-m) {
+      font-size: 5rem;
+      line-height: 5rem;
+      align-self: center;
+    }
+
+    @include respond(mobile-s) {
+      font-size: 3rem;
+      line-height: 3rem;
+      align-self: center;
+    }
+  }
+
+  &__nav {
+    
+  }
+
+  &__btn {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+
+    &:hover svg{
+      fill: $sec-col;
+    }
+  }
+
+  &__btn-left {
+    left: 10%;
+    bottom: 45%;
+
+    @include respond(laptop-l) {
+      left: 3%;
+      bottom: 45%;
+    }
+
+    @include respond(laptop) {
+      left: 3%;
+      bottom: 65%;
+    }
+  }
+
+  &__btn-right {
+    right: 10%;
+    bottom: 45%;
+
+    @include respond(laptop-l) {
+      right: 3%;
+      bottom: 45%;
+    }
+
+    @include respond(laptop) {
+      right: 3%;
+      bottom: 65%;
+    }
+  }
+
+  &__arrow {
+    fill: $prim-col;
+    width: 1.2rem;
+    height: 3rem;
+
+    transition: fill .3s ease;
+  }
+}

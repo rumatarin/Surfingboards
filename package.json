@@ -1,0 +1,51 @@
+{
+  "name": "webpack_cfg",
+  "version": "1.0.0",
+  "description": "start template by rumatarin",
+  "main": "src/js/index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --progress --open",
+    "dev": "webpack --mode development --color --progress",
+    "build": "webpack --mode production --color --progress"
+  },
+  "keywords": [],
+  "author": "rumatarin",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "autoprefixer": "latest",
+    "babel-core": "latest",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "latest",
+    "clean-webpack-plugin": "latest",
+    "copy-webpack-plugin": "latest",
+    "css-loader": "latest",
+    "file-loader": "latest",
+    "html-loader": "latest",
+    "html-webpack-plugin": "latest",
+    "image-webpack-loader": "latest",
+    "imagemin-webpack-plugin": "latest",
+    "img-loader": "latest",
+    "mini-css-extract-plugin": "latest",
+    "node-sass": "latest",
+    "postcss-loader": "latest",
+    "resolve-url-loader": "latest",
+    "sass-loader": "latest",
+    "style-loader": "latest",
+    "svg-url-loader": "latest",
+    "uglifyjs-webpack-plugin": "latest",
+    "url-loader": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest",
+    "webpack-dev-server": "latest",
+    "yargs": "latest"
+  },
+  "dependencies": {
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "npm": "latest",
+    "popper.js": "latest"
+  }
+}

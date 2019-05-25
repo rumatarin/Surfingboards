@@ -1,0 +1,171 @@
+.places {
+  width: 100%;
+  height: 100%;
+  padding-top: 10rem;
+  &__content {
+    max-width: 144rem;
+    margin: 0 auto;
+    display: flex;
+
+    @include respond(mobile-l) {
+      flex-direction: column;
+    }
+
+    @include respond(mobile-m) {
+      flex-direction: column;
+    }
+
+    @include respond(mobile-s) {
+      flex-direction: column;
+    }
+  }
+
+  &__pic {
+    margin-right: 4.5rem;
+
+    @include respond(laptop) {
+      flex-basis: 60%;
+    }
+
+    @include respond(tablet) {
+      flex-basis: 50%;
+    }
+
+    @include respond(mobile-l) {
+      margin: 0 0 7rem 0;
+    }
+
+    @include respond(mobile-m) {
+      margin: 0 0 7rem 0;
+    }
+
+    @include respond(mobile-s) {
+      margin: 0 0 2rem 0;
+    }
+  }
+
+  &__img {
+
+    @include respond(laptop) {
+      width: 100%;
+    }
+
+    @include respond(tablet) {
+      width: 100%;
+    }
+
+    @include respond(mobile-l) {
+      width: 100%;
+    }
+
+    @include respond(mobile-m) {
+      width: 100%;
+    }
+
+    @include respond(mobile-s) {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include respond(laptop) {
+      flex-basis: 40%;
+    }
+
+    @include respond(tablet) {
+      flex-basis: 50%;
+    }
+
+    @include respond(mobile-l) {
+      flex-basis: unset;
+    }
+
+    @include respond(mobile-m) {
+      flex-basis: unset;
+    }
+
+    @include respond(mobile-s) {
+      flex-basis: unset;
+    }
+  }
+
+  &__span {
+    color: rgba(11,12,17,.2);
+
+    @include respond(mobile-l) {
+      text-align: center;
+    }
+
+    @include respond(mobile-m) {
+      text-align: center;
+    }
+
+    @include respond(mobile-s) {
+      text-align: center;
+    }
+  }
+
+  &__heading-adress {
+    position: relative;
+    left: 5rem;
+    width: 33rem;
+    line-height: 5rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
+    @include respond(tablet) {
+      width: 85%;
+      line-height: 7rem;
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(mobile-l) {
+      margin: 0 auto;
+      width: 80%;
+      line-height: 10rem;
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(mobile-m) {
+      margin: 0 auto;
+      width: 80%;
+      line-height: 10rem;
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
+
+    @include respond(mobile-s) {
+      left: 2rem;
+      width: 45rem;
+      line-height: 7rem;
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__link {
+
+    @include respond(mobile-l) {
+      left: 50%; 
+      margin-left: -14%;
+    }
+
+    @include respond(mobile-m) {
+      left: 50%; 
+      margin-left: -14%;
+    }
+
+    @include respond(mobile-s) {
+      left: 50%; 
+      margin-left: -14%;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.header {
+  padding-top: 5rem;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  &__header {
+    display: flex;
+
+    @include respond(tablet) {
+      flex-direction: column;
+    }
+
+    @include respond(mobile-l) {
+      flex-direction: column;
+    }
+
+    @include respond(mobile-m) {
+      flex-direction: column;
+    }
+
+    @include respond(mobile-s) {
+      flex-direction: column;
+    }
+    
+  }
+
+  &__logo {
+
+    @include respond(tablet) {
+      margin-bottom: 5rem;
+    }
+
+    @include respond(mobile-l) {
+      margin-bottom: 2rem;
+    }
+
+    @include respond(mobile-m) {
+      margin-bottom: 2rem;
+    }
+
+    @include respond(mobile-s) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__nav {
+    margin-left: 19.5rem;
+
+    @include respond(tablet) {
+      margin: 0 auto;
+      margin-bottom: 4rem;
+    }
+
+    @include respond(mobile-l) {
+      margin: 0 auto;
+      margin-top: 4rem;
+    }
+
+    @include respond(mobile-m) {
+      margin: 0 auto;
+      margin-top: 4rem;
+    }
+
+    @include respond(mobile-s) {
+      margin: 0 auto;
+      margin-top: 4rem;
+    }
+  }
+
+  &__aside {
+    position: absolute;
+    right: -5rem;
+    top: 37rem;
+    transform: rotate(90deg);
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+    width: 64rem;
+
+    @include respond(laptop-l) {
+      right: -20rem;
+      width: 50rem;
+    }
+  }
+
+  &__aside-text {
+    transform: rotate(-180deg);
+    color: rgba(11,12,17,.2);
+  }
+
+  &__social {
+
+  }
+
+  &__social-item {
+    transform: rotate(-90deg);
+  }
+}
